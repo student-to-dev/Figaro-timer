@@ -1,18 +1,35 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-  }
-  
-  body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center the page horizontally */
-    align-items: center; /* Center the page vertically */
-    font-family: 'Lato', sans-serif;
-  }
-  
-  #timer {
-    font-size: 50px;
-  }
+.container {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  line-height: 100px;
+  height: 100%;
+  display:grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 100px 440px 100px;
+  grid-template-areas: 
+  "h h h h h h h h h h h h"
+  "m c c c c c c c c c c c"
+  "m f f f f f f f f f f f"
+  ;
+}
+
+.header{
+grid-area: h;
+background-color: yellow;
+}
+
+.menu{
+  grid-area: m;
+background-color: red;
+}
+.content{
+grid-area: c;
+background-color: blue;
+}
+
+.footer{
+grid-area: f;
+background-color: aqua;
+}
