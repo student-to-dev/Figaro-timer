@@ -1,47 +1,50 @@
+body {
+  background-image:    url(../img/night.PNG);
+  background-size:     cover;                      /* <------ */
+  background-repeat:   no-repeat;
+  background-position: center center; 
+}
 .container {
   color: white;
   font-size: 20px;
   text-align: center;
   height: 100%;
   display:grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 100px 440px 100px;
+  grid-template-columns: repeat(auto-fill, minmax(12, 1fr));
+  grid-auto-rows: auto 400px auto;
   grid-template-areas: 
   "h h h h h h h h h h h h"
-  "m m c c c c c c c c c c"
-  "m m f f f f f f f f f f"
+  "m c c c c c c c c c c c"
+  "m f f f f f f f f f f f"
   ;
 }
 
 .header{
 grid-area: h;
-background-color: yellow;
 }
 
 .menu{
+  grid-auto-flow: row;
 grid-area: m;
-background-color: red;
-color: black;
+color: white;
 line-height: 80px;
 }
 .menu > nav > ul > li > a{
 text-decoration: none;
-color: black;
+color: white;
 font-size: 20px;
 vertical-align: baseline;
 }
 .content{
 grid-area: c;
-background-color: blue;
+color:white;
 }
 .menu > nav > ul > li > i{
   float:left;
-  margin-top: 16px;
 }
 
 .footer{
 grid-area: f;
-background-color: aqua;
 }
 .far{
   font-size: 40px;
@@ -52,7 +55,6 @@ background-color: aqua;
 /* Navbar container */
 .navbar {
   overflow: hidden;
-  background-color: #333;
   font-family: Arial;
 }
 
@@ -110,7 +112,7 @@ background-color: aqua;
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
-  display: block;
+  display:inline-block;
 }
 
 /* Create three equal columns that floats next to each other */
