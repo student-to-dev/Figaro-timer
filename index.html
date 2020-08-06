@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/all.min.css">
     <title>Figaro Timer</title>
 </head>
-<body>
+<body onload="initializeClock();">
     <div class = "container">
       <div class="header"><p>HEADER</p>
         <div class="navbar">
@@ -49,9 +49,23 @@
           </ul>
         </nav>
       </div>
-      <div class="content">CONTENT</div>
+      <div class="content"><p>CONTENT</p>
+        <div class="wrapper">
+          <h1 id="title">DIGITAL CLOCK</h1>
+          <div id="digital-watch">
+            <span id="clock-face"></span>
+            <span id="meridiem"></span>
+          </div>
+          <div id="buttons">
+            <input type="button" id="start" value="Start" />
+            <input type="button" id="pause" value="Pause" />
+            <input type="button" id="reset" value="Reset" />
+          </div>
+        </div>
+      </div>
       <div class="footer">FOOTER</div>
     </div>
-    <script src="./js/watch.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+  <script type="text/javascript" src="./js/main.js"></script>
 </body>
 </html>
