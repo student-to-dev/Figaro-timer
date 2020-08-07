@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <title>Figaro Timer</title>
+</head>
+<body onload="initializeClock();">
+    <div class = "container">
+      <div class="header"><p>HEADER</p>
+        <div class="navbar">
+          <a href="#home">Home</a>
+          <a href="#news">News</a>
+          <div class="dropdown">
+            <button class="dropbtn">Tools
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <div class="header">
+                <h2>Other Tools</h2>
+              </div>
+              <div class="row">
+                <div class="column">
+                  <h3>Category 1</h3>
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+                <div class="column">
+                  <h3>Category 2</h3>
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu"><p>MENU</p>
+        <nav class="main-nav">
+          <ul>
+            <li><i class="fas fa-clock"></i><a href="">Timer</a></li>
+            <li><i class="far fa-bell"></i><a href="">Alarm Clock</a></li>
+            <li><i class="far fa-hourglass"></i><a href="">Clock</a></li>
+            <li><i class="fas fa-stopwatch"></i><a href="">Stopwatch</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="content"><p>CONTENT</p>
+        <div class="wrapper">
+          <h1 id="title">DIGITAL CLOCK</h1>
+          <div id="digital-watch">
+            <span id="clock-face"></span>
+            <span id="meridiem"></span>
+          </div>
+          <div id="buttons">
+            <input type="button" id="start" value="Start" />
+            <input type="button" id="pause" value="Pause" />
+            <input type="button" id="reset" value="Reset" />
+          </div>
+        </div>
+      </div>
+      <div class="footer">FOOTER</div>
+    </div>
+    <script type="text/javascript" src="./js/script.js"></script>
+  <script type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>
